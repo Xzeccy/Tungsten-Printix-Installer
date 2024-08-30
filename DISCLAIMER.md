@@ -1,3 +1,3 @@
 Disclaimer
 
-This repository is intended to facilitate the deployment of the new Printix client, which requires .NET 6. Please note that I am not affiliated with Printix, Tungsten Automation, or Microsoft. The installers and software provided by these companies are their proprietary products. All scripts and tools provided in this repository are designed to work with the official installers and are not modifications of the original software.
+This repository is for the purpose of deploying the new Printix client, which requires .NET 6. I am in no way affiliated with Printix, Tungsten Automation, Microsoft, or any other mentioned companies. The installers and logos provided by them, including those of Printix, Company Portal, .NET, Microsoft, and PowerShell, are owned by their respective companies.

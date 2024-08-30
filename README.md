@@ -65,7 +65,11 @@ Project Folder/
    - Update any hardcoded paths or variables in the scripts if your environment requires different paths.
 
 3. **Create an Intune Application Package:**
-   - Package all the files in this project (except the `README.md`) into a `.intunewin` file using the IntuneWinAppUtil tool.
+   - Package all the files in this project (except `README.md`, `DISCLAIMER.md`, and `banner.png`) into a `.intunewin` file using the IntuneWinAppUtil tool.
+   - Example command:
+     ```bash
+     .\IntuneWinAppUtil.exe -c "C:\path\to\PrintixPackage" -s Install-Printix.ps1 -o "C:\path\to\Output"
+     ```
    - Create a new Windows app (Win32) deployment in Intune and upload the `.intunewin` file.
 
 4. **Configure Detection Rules:**
@@ -114,6 +118,72 @@ Project Folder/
 
 6. **Logging:**
    - The script logs all actions and results in the `C:/IntuneLogs` directory, which can be useful for troubleshooting.
+
+## Intune Application Configuration
+
+When configuring the application in Intune, use the following settings:
+
+- **Name**: `Printix Client 2.3.0.211`
+- **Description**: `Printix Client 2.3.0.211 installation package. This package relies on .NET Desktop Runtime 6.`
+- **Publisher**: `Tungsten Automation`
+- **App Version**: `2.3.0.211`
+- **Category**: 
+  - `Productivity`
+  - `Business`
+  - `Photos & Media`
+  - `Collaboration & Social`
+- **Show this as a featured app in the Company Portal**: `No`
+- **Information URL**: `https://printix.net/`
+- **Privacy URL**: `https://www.tungstenautomation.com/legal/privacy`
+- **Developer**: `Tungsten Automation`
+- **Owner**: `Tungsten Automation`
+- **Notes**: `No Notes`
+- **Logo**: `Use an appropriate logo`
+
+### Program
+
+- **Install command**:
+  `powershell.exe -ExecutionPolicy Bypass -File .\Install-Printix.ps1`
+- **Uninstall command**:
+  `powershell.exe -ExecutionPolicy Bypass -File .\Install-Printix.ps1`
+- **Installation time required (mins)**: `60`
+- **Allow available uninstall**: `No`
+- **Install behavior**: `System`
+- **Device restart behavior**: `No specific action`
+- **Return codes:**: 
+        `0 Success`
+        `1707 Success`
+        `3010 Soft reboot`
+        `1641 Hard reboot`
+        `1618 Retry`
+
+### Requirements
+
+- **Operating system architecture**: `x64`
+- **Minimum operating system**: `Windows 10 1607`
+- **Disk space required (MB)**: `No Disk space required (MB)`
+- **Physical memory required (MB)**: `No Physical memory required (MB)`
+- **Minimum number of logical processors required**: `No Minimum number of logical processors required`
+- **Minimum CPU speed required (MHz)**: `No Minimum CPU speed required (MHz)`
+- **Additional requirement rules**: `No Additional requirement rules`
+
+### Detection Rules
+
+- **Rules format**: `Manually configure detection rules`
+- **Click +Add, then select:** `Registry` **for "Rule Type"**
+- **Key Path**: `HKEY_LOCAL_MACHINE\SOFTWARE\printix.net\Printix Client\CurrentVersion`
+- **Value name**: `CurrentVersion`
+- **Detection method**: `Version comparison`
+- **Operator**: `Greater than or equal to`
+- **Value:** `2.3.0.211` **PUT YOUR VERSION HERE**
+
+### Dependencies
+
+- **Dependencies:** `No Dependencies`
+
+### Supersedence
+
+- **Supersedence:** `No Supersedence`
 
 ## Modifications Required
 

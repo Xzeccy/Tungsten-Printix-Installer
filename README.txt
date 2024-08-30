@@ -12,7 +12,7 @@ Project Structure:
 Project Folder/
 │
 ├── CLIENT_{<YOURCOMPANY>.printix.net}_{<TENANTID>}.MSI
-├── dotnet-install.ps1
+├── dotnet-install.ps1  #Directly from Microsoft https://dot.net/v1/dotnet-install.ps1
 ├── dotnet.exe
 ├── hostfxr.dll
 ├── install-dotnet.ps1

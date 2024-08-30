@@ -129,3 +129,8 @@ Project Folder/
 ## Conclusion
 
 This project provides a robust solution for deploying the Printix Client with the necessary .NET 6.x runtimes in environments managed by Microsoft Intune. By following the steps outlined in this README, you can ensure that the deployment is successful even in environments with multiple versions of .NET installed.
+
+### External Resources
+
+This project uses the official Microsoft [dotnet-install.ps1](https://github.com/dotnet/install-scripts/blob/main/src/dotnet-install.ps1) script to install the .NET runtimes. You can find the original script and more information in the [Microsoft/dotnet-install-scripts](https://github.com/dotnet/install-scripts) GitHub repository.
+

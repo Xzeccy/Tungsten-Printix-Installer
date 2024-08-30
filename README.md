@@ -3,9 +3,10 @@
 <p align="center">
   <img src="https://learn.microsoft.com/en-us/powershell/media/index/ps_black_128.svg" alt="PowerShell Logo" height="64"/>
   <span style="font-size: 64px; font-weight: bold; margin: 0 20px;">+</span>
-  <img src="https://printix.net/wp-content/uploads/2024/01/Printix-by-Tungsten-Logo.png" alt="Printix Logo" height="64"/>
+  <span style="background-color: white; padding: 5px; display: inline-block;">
+    <img src="https://printix.net/wp-content/uploads/2024/01/Printix-by-Tungsten-Logo.png" alt="Printix Logo" height="64"/>
+  </span>
 </p>
-
 ## Project Overview
 
 This project contains scripts and resources for deploying the Printix Client using Microsoft Intune while ensuring the necessary .NET 6.x runtimes are installed. This is necessary for deploying the new Printix client since the Tungsten Automation acquisition of Printix. .NET 6 is required prior to Printix install.

@@ -1,9 +1,9 @@
 # Printix Deployment with .NET 6.x Runtime Check
 
 <p align="center">
-  <img src="https://learn.microsoft.com/en-us/powershell/media/index/ps_black_128.svg" alt="PowerShell Logo" width="128"/>
+  <img src="https://learn.microsoft.com/en-us/powershell/media/index/ps_black_128.svg" alt="PowerShell Logo" height="64"/>
   <span style="font-size: 64px; font-weight: bold; margin: 0 20px;">+</span>
-  <img src="https://printix.net/wp-content/uploads/2024/01/Printix-by-Tungsten-Logo.png" alt="Printix Logo" width="128"/>
+  <img src="https://printix.net/wp-content/uploads/2024/01/Printix-by-Tungsten-Logo.png" alt="Printix Logo" height="64"/>
 </p>
 
 ## Project Overview

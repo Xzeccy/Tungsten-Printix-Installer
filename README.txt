@@ -90,11 +90,28 @@ What Happens During Execution:
     Install .NET 6.x if Required:
         If any of the required folders do not contain a 6.x version, the script installs .NET 6.0.32 using the install-dotnet.ps1 script.
 
-    Install Printix Client:
-        After confirming that .NET 6.x is installed, the script proceeds to install the Printix Client using the provided MSI installer.
+   Check for Existing Printix Client Version:
 
-    Logging:
-        The script logs all actions and results in the C:/IntuneLogs directory, which can be useful for troubleshooting.
+    The script then checks if the Printix Client is already installed by looking for the registry key:
+        HKEY_LOCAL_MACHINE\SOFTWARE\printix.net\Printix Client\CurrentVersion
+    If the registry key exists, the script retrieves the current version of the Printix Client.
+
+Compare Printix Client Version:
+
+    The script compares the current installed version of Printix with the minimum required version 2.3.0.211.
+    If the installed version is less than 2.3.0.211:
+        The script locates the Printix Client uninstaller at C:\Program Files\printix.net\Printix Client\unins000.exe and runs it silently to remove the outdated version.
+        The uninstallation is performed silently (/verysilent), and a log entry is made to confirm the successful uninstallation.
+    If the installed version is equal to or greater than 2.3.0.211:
+        No further action is required, and the script exits, as the installed Printix version meets the requirements.
+
+Install Printix Client:
+
+    If the Printix Client was uninstalled, or if the registry path does not exist (indicating Printix is not installed), the script proceeds to install the Printix Client using the provided MSI installer.
+
+Logging:
+
+    The script logs all actions and results in the C:/IntuneLogs directory, which can be useful for troubleshooting.
 
 Modifications Required
 

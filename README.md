@@ -1,6 +1,10 @@
 # Printix Deployment with .NET 6.x Runtime Check
 
-![Printix Logo](https://printix.net/wp-content/uploads/2024/01/Printix-by-Tungsten-Logo.png)
+<p align="center">
+  <img src="https://learn.microsoft.com/en-us/powershell/media/index/ps_black_128.svg" alt="PowerShell Logo" width="128"/>
+  <span style="font-size: 64px; font-weight: bold; margin: 0 20px;">+</span>
+  <img src="https://printix.net/wp-content/uploads/2024/01/Printix-by-Tungsten-Logo.png" alt="Printix Logo" width="128"/>
+</p>
 
 ## Project Overview
 
@@ -125,5 +129,3 @@ Project Folder/
 ## Conclusion
 
 This project provides a robust solution for deploying the Printix Client with the necessary .NET 6.x runtimes in environments managed by Microsoft Intune. By following the steps outlined in this README, you can ensure that the deployment is successful even in environments with multiple versions of .NET installed.
-
-![PowerShell Logo](https://learn.microsoft.com/en-us/powershell/media/index/ps_black_128.svg)

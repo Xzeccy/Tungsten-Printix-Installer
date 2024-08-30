@@ -21,6 +21,8 @@ Project Folder/
 ├── install-dotnet.ps1
 ├── Install-Printix.ps1
 ├── Microsoft Windows Desktop Runtime - 6.0.32 (x64).swidtag
+├── DISCLAIMER.md
+├── banner.png
 └── README.md
 ```
 

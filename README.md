@@ -1,4 +1,4 @@
-# Automated Printix Client Deployment with PowerShell and .NET 6 Runtime Validation + Installation
+# DEPRECATED - Automated Printix Client Deployment with PowerShell and .NET 6 Runtime Validation + Installation
 
 <p align="center">
   <img src="banner.png" alt="Automated Printix Deployment with PowerShell and .NET 6" />
@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-This project contains scripts and resources for deploying the Printix Client using Microsoft Intune while ensuring the necessary .NET 6.x runtimes are installed. This is necessary for deploying the new Printix client since the Tungsten Automation acquisition of Printix. .NET 6 is required prior to Printix install.
+DO NOT USE THIS - PRINTIX LATEST DEPLOYMENT HAS .NET BUILT IN. This project contains scripts and resources for deploying the Printix Client using Microsoft Intune while ensuring the necessary .NET 6.x runtimes are installed. This is necessary for deploying the new Printix client since the Tungsten Automation acquisition of Printix. .NET 6 is required prior to Printix install.
 The scripts are designed to handle cases where multiple versions of .NET may already be installed, and they ensure the Printix Client installation only proceeds if the required .NET 6.x runtimes are present in specific folders.
 
 ## Project Structure
